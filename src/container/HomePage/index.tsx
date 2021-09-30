@@ -1,5 +1,7 @@
 import { PostData } from '../../domain/posts/posts';
 import { Container } from './home.style';
+import Header from '../../components/Header';
+import MainContainer from '../../components/MainContainer';
 
 export type HomePageProps = {
   posts: PostData[];
@@ -7,10 +9,20 @@ export type HomePageProps = {
 
 export default function HomePage({ posts }: HomePageProps) {
   return (
-    <Container>
-      {posts.map((post) => (
-        <h2 key={post.slug}>{post.title}</h2>
-      ))}
-    </Container>
+    <>
+      <Header />
+      <MainContainer>
+        <Container>
+          {posts.map((post) => (
+            <h2
+              style={{ backgroundColor: 'black', color: 'white' }}
+              key={post.slug}
+            >
+              {post.title}
+            </h2>
+          ))}
+        </Container>
+      </MainContainer>
+    </>
   );
 }
