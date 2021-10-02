@@ -32,7 +32,6 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   a {
-    color: ${({ theme }) => theme.colors.secondary};
     text-decoration: none;
     transition: opacity 300ms ease-in-out;
     cursor: pointer;
