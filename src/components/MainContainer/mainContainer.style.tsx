@@ -8,5 +8,3 @@ export const Container = styled.main`
     padding: ${theme.spacings.medium};
   `}
 `;
-
-export const PostContainer = styled.div``;
