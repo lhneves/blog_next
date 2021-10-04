@@ -9,6 +9,8 @@ import { countAllPosts } from '../../src/data/posts/count-all-posts';
 import { getAllPosts } from '../../src/data/posts/get-all-posts';
 import { getPost } from '../../src/data/posts/get-post';
 
+import Post from '../../src/container/Post';
+
 export type DynamicPostProps = {
   post: PostData;
 };
@@ -18,7 +20,7 @@ interface IParams extends ParsedUrlQuery {
 }
 
 function DynamicPost({ post }: DynamicPostProps) {
-  return <p>{post.title}</p>;
+  return <Post post={post} />;
 }
 
 export default DynamicPost;
