@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "deploy:static": "next build && next export"
   },
   "dependencies": {
     "disqus-react": "^1.1.2",
