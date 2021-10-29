@@ -1,4 +1,5 @@
 import React from 'react';
+import { Comments } from '../../components/Comments';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import MainContainer from '../../components/MainContainer';
@@ -29,6 +30,7 @@ function Post({ post }: PostProps) {
           date={post.createdAt}
         />
         <PostContainer content={post.content} />
+        <Comments title={post.title} slug={post.slug} />
       </MainContainer>
       <Footer />
     </>
