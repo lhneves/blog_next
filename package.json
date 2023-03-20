@@ -36,6 +36,9 @@
     "prettier": "^2.4.0",
     "typescript": "4.4.3"
   },
+  "engine": {
+    "node": "14.17.6",
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
